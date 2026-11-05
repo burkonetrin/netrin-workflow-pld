@@ -5,12 +5,6 @@ import { CommercialClientDetailPage } from "@/components/CommercialClientDetailP
 import { CommercialClientsPage } from "@/components/CommercialClientsPage";
 import { CommercialDashboardPage } from "@/components/CommercialDashboardPage";
 import { CommercialPrototypeShell } from "@/components/CommercialPrototypeShell";
-import { BillingTaskLookup } from "@/features/billing/components/BillingTaskLookup";
-import { BillingTaskDetailPage } from "@/features/billing/components/BillingTaskDetailPage";
-import { BackgroundCheckPreviewRoute } from "@/components/BackgroundCheckPreviewRoute";
-import { DataSourceDetailRoute } from "@/components/DataSourceDetailRoute";
-import { ProviderDetailRoute } from "@/components/ProviderDetailRoute";
-import { ProvidersAndSourcesPage } from "@/components/ProvidersAndSourcesPage";
 import { PROTOTYPE_BASE_PATH } from "@/constants";
 
 export function App() {
@@ -26,19 +20,7 @@ export function App() {
           <Route path="clientes" element={<CommercialClientsPage />} />
           <Route path="clientes/:clientId" element={<CommercialClientDetailPage />} />
           <Route path="faturamento" element={<BillingListPage />} />
-          <Route path="faturamento/tasks" element={<BillingTaskLookup />} />
-          <Route path="faturamento/tasks/:taskId" element={<BillingTaskDetailPage />} />
           <Route path="faturamento/:id" element={<BillingDetailPage />} />
-          <Route path="fontes-fornecedores" element={<ProvidersAndSourcesPage />} />
-          <Route
-            path="fontes-fornecedores/fontes/:sourceId"
-            element={<DataSourceDetailRoute />}
-          />
-          <Route
-            path="fontes-fornecedores/modelos-background-check-preview"
-            element={<BackgroundCheckPreviewRoute />}
-          />
-          <Route path="fontes-fornecedores/:id" element={<ProviderDetailRoute />} />
         </Route>
       </Routes>
     </BrowserRouter>
