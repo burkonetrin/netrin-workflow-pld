@@ -255,7 +255,7 @@ function BillingListContent() {
   return (
     <div className="relative min-h-full space-y-6 bg-white -m-6 md:-m-8 w-[calc(100%+3rem)] md:w-[calc(100%+4rem)] max-w-none p-6 md:p-8">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-        <PageTitle icon={<FinancialIcon color="currentColor" />} label="Faturamento" />
+        <PageTitle icon={<FinancialIcon color="currentColor" />} label="Workflow" />
 
         <div className="relative flex items-center gap-2">
           {selectedCount > 0 ? (

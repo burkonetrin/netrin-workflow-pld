@@ -16,7 +16,7 @@ export function BillingInvoiceBreadcrumbs({ className }: BillingInvoiceBreadcrum
     <Breadcrumbs className={className}>
       <BreadcrumbItem>
         <Link to={BILLING_BASE_PATH} className="text-gray-400 hover:text-gray-600">
-          Faturamento
+          Workflow
         </Link>
       </BreadcrumbItem>
       <BreadcrumbItem>

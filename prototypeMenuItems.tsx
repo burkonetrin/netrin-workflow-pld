@@ -10,7 +10,7 @@ export const commercialDashboardPrototypeMenuItems: MenuItem[] = [
     icon: <CustomersIcon />,
   },
   {
-    label: "Faturamento",
+    label: "Workflow",
     path: BILLING_BASE_PATH,
     icon: <FinancialIcon />,
   },
